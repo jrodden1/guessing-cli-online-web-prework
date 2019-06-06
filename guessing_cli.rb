@@ -7,8 +7,7 @@ end
 def run_guessing_game
   input = guess_a_number
   while input != "exit"
-  randomNum = rand(1..6)
-    if randomNum.to_s == input
+    if rand(1..6).to_s == input
       puts "You guessed the correct number!"
       input = guess_a_number
     else
